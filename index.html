@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TradingSignalBot Open Source: Signal Tools, TradingView Indicators</title>
+<meta name="description" content="Free, open-source signal tools from TradingSignalBot: TradingView strategy indicators, a Telegram signal channel kit, a TradingView webhook bridge, a signal record auditor and a chart renderer.">
+<link rel="canonical" href="https://tradingsignalbot.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TradingSignalBot: open-source signal tools">
+<meta property="og:description" content="TradingView strategy indicators, a signal channel kit, a webhook bridge, a record auditor and a chart renderer. Free and open source.">
+<meta property="og:url" content="https://tradingsignalbot.github.io/">
+<meta property="og:image" content="https://tradingsignalbot.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://tradingsignalbot.com/#forexia","name":"Forexia","url":"https://forexiapro.com/"},
+{"@type":"WebSite","@id":"https://tradingsignalbot.github.io/#site","url":"https://tradingsignalbot.github.io/","name":"TradingSignalBot open source","publisher":{"@id":"https://tradingsignalbot.com/#forexia"},"sameAs":["https://github.com/TradingSignalBot"]}
+]}
+</script>
+<style>
+  :root { --ink: #0b0c0e; --text: #121417; --muted: #5b616b; --line: #e4e6ea; --accent: #0f9d6b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; color: var(--text); background: #f5f6f7; }
+  a { color: var(--accent); }
+  header { background: var(--ink) radial-gradient(50% 80% at 85% 0%, rgba(15,157,107,.32), transparent 70%); color: #eceef1; padding: 56px 24px 64px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  .brand { font-weight: 800; color: #eceef1; text-decoration: none; }
+  .brand b { color: #4fd6a0; }
+  h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.06; letter-spacing: -.03em; margin: 28px 0 14px; }
+  .lead { font-size: 19px; color: #a9afb9; max-width: 760px; margin: 0; }
+  main { padding: 48px 24px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; min-width: 0; }
+  .card h2 { font-size: 21px; margin: 0 0 8px; }
+  .card h2 a { color: var(--text); text-decoration: none; }
+  .card p { color: var(--muted); margin: 0 0 14px; font-size: 15.5px; }
+  .card .links { margin-top: auto; }
+  .card .links a { margin-right: 14px; font-weight: 600; font-size: 15px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; margin-bottom: 10px; align-self: flex-start; }
+  pre { background: var(--ink); color: #eceef1; padding: 14px; border-radius: 10px; font-size: 13px; overflow-x: auto; margin: 0 0 14px; }
+  .more { margin-top: 48px; }
+  .more ul { padding-left: 1.2em; }
+  .note { color: var(--muted); font-size: 15px; }
+  footer { padding: 32px 24px; color: var(--muted); font-size: 14px; text-align: center; border-top: 1px solid var(--line); }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="https://tradingsignalbot.com/?via=github-hub">Trading<b>Signal</b>Bot</a>
+  <h1>Open-source signal tools</h1>
+  <p class="lead">TradingView strategy indicators, a kit to run your own Telegram signal channel, a webhook bridge, a record auditor and a chart renderer. Free, with no account and no key, from the team behind the TradingSignalBot Telegram bot.</p>
+</div></header>
+<main><div class="wrap">
+  <div class="cards">
+    <div class="card">
+      <span class="tag">TradingView</span>
+      <h2><a href="https://github.com/TradingSignalBot/tradingview-strategies">Strategy indicator pack</a></h2>
+      <p>Pine Script v6 indicators for the London breakout, opening range breakout, break and retest, Supertrend, EMA and MACD crossovers, RSI divergence and the liquidity sweep. Each draws its levels, the entry, the stop and the targets, with alerts.</p>
+      <div class="links"><a href="https://github.com/TradingSignalBot/tradingview-strategies">GitHub</a><a href="https://tradingsignalbot.com/strategies/?via=tv-strategies">The strategies</a></div>
+    </div>
+    <div class="card">
+      <span class="tag">Telegram</span>
+      <h2><a href="https://github.com/TradingSignalBot/signal-channel-kit">Signal channel starter kit</a></h2>
+      <p>A Telegram bot that posts a signal from a command or a TradingView alert and keeps a pinned record that counts losses, with risk-disclosure and channel-rules templates.</p>
+      <div class="links"><a href="https://github.com/TradingSignalBot/signal-channel-kit">GitHub</a><a href="https://tradingsignalbot.com/guides/how-to-start-a-forex-signal-channel/?via=channel-kit">The guide</a></div>
+    </div>
+    <div class="card">
+      <span class="tag">Self-hosted</span>
+      <h2><a href="https://github.com/TradingSignalBot/tradingview-webhook-bridge">TradingView webhook bridge</a></h2>
+      <p>Takes TradingView alert webhooks and forwards them to Telegram, Discord or an MT5 expert advisor, behind a shared secret. One Docker image; Railway and Cloudflare Workers too.</p>
+      <div class="links"><a href="https://github.com/TradingSignalBot/tradingview-webhook-bridge">GitHub</a><a href="https://tradingsignalbot.com/telegram-signal-bot/?via=tv-bridge">Hosted, with charts</a></div>
+    </div>
+    <div class="card">
+      <span class="tag">In your browser</span>
+      <h2><a href="https://tradingsignalbot.github.io/record-auditor/">Signal record auditor</a></h2>
+      <p>Paste or upload a channel's signals and count wins, losses, unresolved and deleted signals by one published set of rules. Nothing is uploaded.</p>
+      <div class="links"><a href="https://tradingsignalbot.github.io/record-auditor/">Open it</a><a href="https://github.com/TradingSignalBot/record-auditor">GitHub</a><a href="https://tradingsignalbot.com/how-we-count/?via=record-audit">The rules</a></div>
+    </div>
+    <div class="card">
+      <span class="tag">npm</span>
+      <h2><a href="https://github.com/TradingSignalBot/signal-chart">Signal chart renderer</a></h2>
+      <p>Renders candles with the entry, stop and targets drawn, as PNG or SVG.</p>
+      <pre>npm install signal-chart</pre>
+      <div class="links"><a href="https://github.com/TradingSignalBot/signal-chart">GitHub</a><a href="https://tradingsignalbot.com/how-it-works/?via=chart-render">How the bot draws them</a></div>
+    </div>
+    <div class="card">
+      <span class="tag">Preview</span>
+      <h2><a href="https://github.com/TradingSignalBot/sdk">API SDK</a></h2>
+      <p>JavaScript and Python clients for the TradingSignalBot API. The API is a preview, so for now this is the webhook signature verifier, ready for the day it opens.</p>
+      <div class="links"><a href="https://github.com/TradingSignalBot/sdk">GitHub</a><a href="https://tradingsignalbot.com/api/?via=tsb-sdk">The API preview</a></div>
+    </div>
+  </div>
+  <section class="more">
+    <h2>Open data</h2>
+    <ul>
+      <li><a href="https://tradingsignalbot.com/data/signals.json">signals.json</a>: every free-channel signal with its levels and outcome as posted, and the record counted by the rules on <a href="https://tradingsignalbot.com/how-we-count/?via=github-hub">How we count</a>. Free to reuse with a link.</li>
+      <li>A live badge of the record for a README: <a href="https://tradingsignalbot.com/record/?via=badges"><img src="https://tradingsignalbot.com/badge/record.svg" alt="TradingSignalBot record" height="20" style="vertical-align:middle;max-width:100%"></a></li>
+    </ul>
+    <h2>On tradingsignalbot.com</h2>
+    <ul>
+      <li><a href="https://tradingsignalbot.com/record/?via=github-hub">The record</a>: every free-channel signal, losses included</li>
+      <li><a href="https://tradingsignalbot.com/forex-signals/?via=github-hub">Forex signals on Telegram</a>, each posted as a marked-up chart and redrawn at every target and stop</li>
+      <li><a href="https://tradingsignalbot.com/telegram-signal-bot/?via=github-hub">Signal bot for Telegram channels</a>: white label for channel owners, early access</li>
+    </ul>
+    <p class="note">Signals are general information, not financial advice. No result is promised, and past signals do not predict future ones.</p>
+  </section>
+</div></main>
+<footer>
+  <p>Part of the Forexia network: <a href="https://interestratedecision.com/">InterestRateDecision.com</a> · <a href="https://forexiapro.com/?via=github-hub">Forexia Academy</a> · <a href="https://tradingsignalbot.com/?via=github-hub">TradingSignalBot</a> · <a href="https://propsim.markets/?via=github-hub">PropSim</a> · <a href="https://github.com/dylanpersonguy/OpenCharts">OpenCharts</a></p>
+  <p><a href="https://github.com/TradingSignalBot">GitHub</a></p>
+</footer>
+</body>
+</html>
